@@ -37,3 +37,15 @@ function leFormulario(event) {
         }
     }
 }
+function atualizaTela() {
+    const estoque = getEstoque();
+
+    olJoao.innerHTML = "";
+    olMaria.innerHTML = "";
+    document.entrada.quantidade.value = 1;
+    document.entrada.fruta.value = "maca";
+
+    preencheLista(olJoao, estoque.joao);
+    preencheLista(olMaria, estoque.maria);
+    
+}
